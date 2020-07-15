@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE/edge">
+    <title>Email</title>
+
+    <style type="text/css">
+        @media screen and (max-width:600px) {
+            .mobile {
+                width: 100% !important;
+            }
+
+            .block {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .fade1 {
+            animation: 1s 1 fade-in;
+        }
+
+        .fade2 {
+            animation: 2s 1 fade-in;
+        }
+
+
+        a {
+            color: slateblue;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: none;
+        }
+
+        a.button:hover {
+            background-color: red !important;
+        }
+
+        /* Interactive emails */
+        /* Hide Inputs */
+        input {
+            display: none;
+        }
+
+        /* Make lable look clickable */
+        label {
+            cursor: pointer;
+        }
+
+        /* Hide Slides */
+        .slide {
+            display: none;
+        }
+
+        /* checked slides */
+        #slide1:checked~.slide1,
+        #slide2:checked~.slide2,
+        #slide3:checked~.slide3 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body id="body" style="margin: 0 !important; padding: 0 !important;">
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td align="center">
+
+                <table class="mobile" border="0" cellpadding="0" cellspacing="0" width="600px" role="presentation"
+                    style="color:black; font-family: sans-serif; font-size:18px; line-height: 36px;
+                 margin: 0 auto;">
+
+                    <!-- Logo-Img -->
+                    <tr>
+                        <td align="center" style="padding: 20px">
+                            <img class="fade1" src="./image/download.png" alt="" width="60px"
+                                style="border-radius:60px; display: block; margin: 0 auto;">
+                        </td>
+                    </tr>
+
+                    <!-- Heading-->
+                    <tr>
+                        <td style="padding:20px">
+                            <h1 style="margin: 40x 0; text-align: center; font-size: 32px;">This is a heading</h1>
+                        </td>
+                    </tr>
+
+                    <!-- Hero-img -->
+                    <tr>
+                        <td style="padding: 20px;">
+                            <img class="fade2" src="image/comp.jpg" alt="a mailbox image on computer." width="600px"
+                                border="0" style="display:block; max-width:100%; min-width:100px; width:100%">
+                        </td>
+                    </tr>
+
+                    <!-- Body-copy-->
+                    <tr>
+                        <td style="padding: 20px;">
+                            <p style="margin: 40px 0 20px 0;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Ea modi molestiae
+                                assumenda
+                                inventore quam quae porro, nam ipsum exercitationem illum doloremque facere incidunt
+                                dolorem, unde velit.
+                                Magnam dolores labore perspiciatis!</p>
+
+                            <p style="margin: 0 0 20px 0;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                                modi molestiae
+                                assumenda
+                                inventore quam quae porro, nam ipsum exercitationem illum doloremque facere incidunt
+                                dolorem, unde velit.
+                                Magnam dolores labore perspiciatis!</p>
+
+                            <p style="margin: 0 0 20px 0;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                                modi molestiae
+                                assumenda
+                                inventore quam quae porro, nam ipsum exercitationem illum doloremque facere incidunt
+                                dolorem, unde velit.
+                                Magnam dolores labore perspiciatis!</p>
+
+
+                        </td>
+                    </tr>
+
+                    <!-- checked section -->
+                    <tr>
+                        <td style="padding : 20px 0 60px 0">
+
+                            <input type="radio" name="slides" id="slide1">
+                            <input type="radio" name="slides" id="slide2">
+                            <input type="radio" name="slides" id="slide3">
+
+                            <label for="slide1" class=" slide-lable"
+                                style="border: 2px solid black; display: inline-block; margin:10px; padding: 4px 20px">Slide1</label>
+                            <label for="slide2" class=" slide-lable"
+                                style="border: 2px solid black; display: inline-block; margin:10px; padding: 4px 20px">Slide2</label>
+                            <label for="slide3" class=" slide-lable"
+                                style="border: 2px solid black; display: inline-block; margin:10px; padding: 4px 20px">Slide3</label>
+
+                            <div class="slide slide1" style="background-color: silver; padding:20px;">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe, quaerat
+                                    deleniti magnam autem expedita dolorum facilis, ipsum labore exercitationem nemo
+                                    laborum quas omnis sed error dicta obcaecati nostrum vitae.
+                                </p>
+                            </div>
+                            <div class="slide slide2" style="background-color:silver; padding:20px;">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe, quaerat
+                                    deleniti magnam autem expedita dolorum facilis, ipsum labore exercitationem nemo
+                                    laborum quas omnis sed error dicta obcaecati nostrum vitae.
+                                    , ipsum labore exercitationem nemo
+                                    laborum quas omnis sed error dicta obcaecati nostrum vitae., ipsum labore
+                                    exercitationem nemo
+                                    laborum quas omnis sed error dicta obcaecati nostrum vitae.
+                                </p>
+                            </div>
+                            <div class="slide slide3" style="background-color:silver; padding:20px;">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe, quaerat
+                                    laborum quas omnis sed error dicta obcaecati nostrum vitae.
+                                </p>
+                            </div>
+                            <p style="margin: 0 0 20px 0; padding: 40px;">Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Ea
+                                modi molestiae
+                                assumenda
+                                inventore quam quae porro, nam ipsum exercitationem illum doloremque facere incidunt
+                                dolorem, unde velit.
+                                Magnam dolores labore perspiciatis!</p>
+
+                        </td>
+                    </tr>
+
+
+                    <!-- Button -->
+                    <tr>
+                        <td style="padding: 20px 0 60px 0">
+                            <div style="text-align:center">
+                                <!--[if mso]>
+                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://frontendmaster.com" style="height:54px;v-text-anchor:middle;width:200px;" arcsize="8%" strokecolor="#ffffff" fill="t">
+                            <v:fill type="tile" src="" color="#080679" />
+                            <w:anchorlock/>
+                            <center style="color:#ffffff;font-family:sans-serif;font-size:40px;font-weight:bold;">This is a button</center>
+                            </v:roundrect>
+                            <![endif]-->
+                                <a class="button" href="http://frontendmaster.com"
+                                    style="background-color:#080679;background-image:url();border:1px solid #ffffff;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:18px;font-weight:bold;line-height:54px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;">This
+                                    is a button
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Two column -->
+                    <tr>
+                        <td>
+                            <table class="block" border="0" cellpadding="0" cellspacing="0" width="100%"
+                                role="presentation">
+                                <tr>
+                                    <td>
+                                        <!-- Left-column -->
+                                        <table align="left" border="0" cellspacing="0" cellpadding="0" width="33%">
+                                            <tr>
+                                                <td style="padding: 20px; line-height: 24px;">
+                                                    <h2 style="font-size:16px; margin: 0 0 20px 0">Heading Time</h2>
+                                                    <p style="margin: 0 0 20px 0;">Lorem ipsum dolor sit amet
+                                                        consectetur,
+                                                        adipisicing elit. Ea
+                                                        modi molestiae
+                                                        assumenda
+                                                        inventore quam quae porro, nam ipsum exercitationem illum
+                                                        doloremque
+                                                        facere incidunt
+                                                        dolorem, unde velit.
+                                                        Magnam dolores labore perspiciatis!</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- Right Column -->
+                                        <table class="block" align="right" border="0" cellspacing="0" cellpadding="0"
+                                            width="33%">
+                                            <tr>
+                                                <td style="padding: 20px; line-height: 24px;">
+                                                    <h2 style="font-size:16px; margin: 0 0 20px 0">Heading Time</h2>
+                                                    <p style="margin: 0 0 20px 0;">Lorem ipsum dolor sit amet
+                                                        consectetur,
+                                                        adipisicing elit. Ea
+                                                        modi molestiae
+                                                        assumenda
+                                                        inventore quam quae porro, nam ipsum exercitationem illum
+                                                        doloremque
+                                                        facere incidunt
+                                                        dolorem, unde velit.
+                                                        Magnam dolores labore perspiciatis!</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- Third column -->
+                                        <table class="block" align="right" border="0" cellspacing="0" cellpadding="0"
+                                            width="33%">
+                                            <tr>
+                                                <td style="padding: 20px; line-height: 24px;">
+                                                    <h2 style="font-size:16px; margin: 0 0 20px 0">Heading Time</h2>
+                                                    <p style="margin: 0 0 20px 0;">Lorem ipsum dolor sit amet
+                                                        consectetur,
+                                                        adipisicing elit. Ea
+                                                        modi molestiae
+                                                        assumenda
+                                                        inventore quam quae porro, nam ipsum exercitationem illum
+                                                        doloremque
+                                                        facere incidunt
+                                                        dolorem, unde velit.
+                                                        Magnam dolores labore perspiciatis!</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+
+
+
+                    <!--footer-->
+                    <tr>
+                        <td style=" color:grey; font-family: sans-serif; font-size:16px; line-height: 24px; max-width:
+                                                    600px; margin: 40px 0; padding: 4em 20px;">
+                            <p style="margin:70px,0,20,0"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Corporis facilis corrupti rerum nam, dolorum atque. Doloremque minima illum ducimus
+                                consequatur ea iure nam! A aspernatur odio, reiciendis rem voluptatibus illo?
+                                <a href="#" style="color:purple; font-weight:bold">Feel free
+                                    to
+                                    unsubscribe</a></p>
+                            <p style="margin: 0 0 60 0;"> 1234 Main St Address, MA 012345</p>
+
+                        </td>
+                    </tr>
+
+
+                </table>
+
+            </td>
+        </tr>
+
+    </table>
+
+
+
+
+
+</body>
+
+</html>
